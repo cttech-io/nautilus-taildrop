@@ -3,7 +3,10 @@ import os
 import subprocess
 
 import gi
-gi.require_version("Nautilus", "4.1")
+try:
+    gi.require_version("Nautilus", "4.1")
+except ValueError:
+    gi.require_version("Nautilus", "4.0")  # Nautilus 43-46, e.g. Ubuntu 24.04
 from gi.repository import Gio, GLib, GObject, Nautilus
 
 TAILSCALE = "/usr/bin/tailscale"

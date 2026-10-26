@@ -17,7 +17,7 @@ For exact progress, `taildrop-send` streams each file into `tailscale file cp --
 
 ## Requirements
 
-- GNOME Files 43 or later (tested on Nautilus 50, Fedora 44)
+- GNOME Files 43 or later (tested on Nautilus 50 on Fedora 44, and Nautilus 46 on Ubuntu 24.04)
 - `nautilus-python` (Fedora: `sudo dnf install nautilus-python`, Debian/Ubuntu: `sudo apt install python3-nautilus`)
 - GTK4, libadwaita and `python3-gobject`, all included with GNOME
 - Tailscale, with your user allowed to use Taildrop without sudo:
